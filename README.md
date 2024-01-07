@@ -46,6 +46,9 @@ OPENAI_KEY = xxx
 ```
 
 #### 4. Put your pdf files into `files` folder
+```
+├───files
+```
 
 #### 5. Create Pinecone index by running below command
 ```bash
@@ -63,7 +66,7 @@ python ingest_docs_to_index.py
 cd ..
 streamlit run app.py
 ```
-Visit the provided URL in your browser to interact with the PDF chatbot.
+Note: Please return to root folder at first before running the app
 
 
 
