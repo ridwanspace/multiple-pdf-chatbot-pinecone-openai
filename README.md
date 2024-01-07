@@ -3,14 +3,15 @@
 ![Chatbot](./asset/pinecone.png)
 
 ### Project Overview
-This repository contains a multiple PDFs chatbot built using Streamlit, Python, Langchain, FAISS, and Vertex AI. The chatbot allows users to upload PDF files, specify a service account (JSON), and provide the Google Cloud Platform (GCP) project ID to interact with the chatbot and extract information from the uploaded PDFs.
+This repository contains a multiple PDFs chatbot built using Streamlit, Python, Langchain, Pinecone, and Open AI. The chatbot allows users to convert PDF files into vector store (Pinecone's index), then we are able to interact with the chatbot and extract information from the uploaded PDFs.
+
+Given a knowledge base whose vectors are stored in a pinecone, the chatbot provides answers to the questions that are most relevant to the context (called as knowledge base == vector store).
 
 ### Tech Stack
 * [**Streamlit**](https://streamlit.io/): A web app framework for Python.
-* [**FAISS**](https://faiss.ai/index.html): a library for efficient similarity search and clustering of dense vectors (Local vector store).
+* [**Pinecone**](https://www.pinecone.io/): an online vector database to store our vectorized pdf files.
 * [**Langchain**](https://python.langchain.com/docs/get_started/introduction): A library for natural language processing (NLP).
-* [**Vertex AI**](https://cloud.google.com/vertex-ai?hl=en): A managed machine learning (ML) platform on Google Cloud. It is an alternative for OpenAI.
-
+* [**Open AI**](https://platform.openai.com/docs/overview): A service to call the llm and embedding model for our QA app
 
 ### Features
 1. Chat to multiple PDF files.
