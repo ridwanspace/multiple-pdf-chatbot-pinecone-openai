@@ -22,11 +22,8 @@ Given a knowledge base whose vectors are stored in a pinecone, the chatbot provi
 6. Able to ask and answer in any languages
 7. Will answer `I don't know` if being asked non-related questions (not exist in vector database)
 
-Screenshot 1: Related question
 
-![Screenshot](./asset/screenshot.png)
-
-Screenshot 2: Non Related question
+Screenshot : Related and Non Related questions
 
 ![Screenshot1](./asset/screenshot2.png)
 
