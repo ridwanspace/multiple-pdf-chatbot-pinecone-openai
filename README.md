@@ -20,8 +20,15 @@ Given a knowledge base whose vectors are stored in a pinecone, the chatbot provi
 4. Extract information from the uploaded PDFs (pinecone's index) using Langchain by entering the question.
 5. Able to memorize the previous question by using `ConversationalRetrievalChain` from Langchain
 6. Able to ask and answer in any languages
+7. Will answer `I don't know` if being asked non-related questions (not exist in vector database)
+
+Screenshot 1: Related question
 
 ![Screenshot](./asset/screenshot.png)
+
+Screenshot 2: Non Related question
+
+![Screenshot1](./asset/screenshot2.png)
 
 ### Installation
 Follow the steps below to set up and run the PDF chatbot:
